@@ -1,0 +1,17 @@
+.flat-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 80px;
+  height: 80px;
+  background: #d09c61;
+  animation: circleAction 3s linear infinite;
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 64% 56% 47% 73% / 55% 58% 62% 65%;
+  @media (max-width: 575px) {
+    display: none;
+  }
+}

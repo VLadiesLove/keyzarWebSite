@@ -1,0 +1,48 @@
+.slider-button {
+  transition: opacity 0.2s;
+  position: relative;
+  & + & {
+    margin-left: auto;
+    @media (max-width: 1349px) {
+      margin-left: 20px;
+    }
+  }
+  &.swiper-button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  &-svg {
+    transition: opacity 0.2s;
+  }
+  &-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &_next {
+      right: 0;
+      left: initial;
+    }
+  }
+  &:hover &-default {
+    opacity: 0;
+  }
+  &:hover &-hover {
+    opacity: 1;
+  }
+}
+.slider-count {
+  color: #d09c61;
+  display: none;
+  font-size: 1.8rem;
+  margin: 0 10px;
+  @media (max-width: 991px) {
+    display: flex;
+  }
+  @media (max-width: 575px) {
+    font-size: 1.2rem;
+  }
+  &-text {
+    margin: 0 5px;
+  }
+}

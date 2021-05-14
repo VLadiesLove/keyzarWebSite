@@ -1,0 +1,40 @@
+.cookie {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #f1e8e0;
+  border-radius: 6px;
+  background: #fff;
+  width: 100%;
+  max-width: 248px;
+  height: 42px;
+  padding: 0 20px;
+  z-index: 9;
+  background: #fff;
+  &__text {
+    font-size: 1.4rem;
+    line-height: 42px;
+  }
+  &__link {
+    color: #444547;
+    line-height: 18px;
+    border-bottom: 1px solid #444547;
+    transition: border 0.2s, color 0.2s;
+    &:hover {
+      color: #d09c61;
+      border-bottom: 1px solid #d09c61;
+    }
+  }
+  &__button {
+    position: absolute;
+    top: -10px;
+    right: -30px;
+  }
+  &__circle {
+    transition: fill 0.2s;
+  }
+  &__button:hover &__circle {
+    fill: #d09c61;
+  }
+}
